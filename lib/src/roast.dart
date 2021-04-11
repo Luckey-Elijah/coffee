@@ -1,12 +1,12 @@
-/// Roast level used to track beans. Can be on of the following
-/// in order of "roastness":
-/// - `veryLight`
-/// - `light`
-/// - `lightMedium`
-/// - `medium`
-/// - `darkMedium`
-/// - `dark`
-/// - `veryDark`
+/// Roast level of a coffee bean.
+/// Can be one of the following, 1 being th e:
+/// 1. `veryLight`
+/// 2. `light`
+/// 3. `lightMedium`
+/// 4. `medium`
+/// 5. `darkMedium`
+/// 6. `dark`
+/// 7. `veryDark`
 enum Roast {
   /// a _very light_ roast
   veryLight,

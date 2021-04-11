@@ -1,3 +1,4 @@
+/// A coffee-related library for an object-oriented representation of coffee.
 library coffee;
 
 export 'src/altitude.dart';

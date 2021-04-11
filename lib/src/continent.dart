@@ -1,4 +1,4 @@
-/// Coffee plant continent origin
+/// Coffee plant continent origin.
 enum Continent {
   /// Coffee plant continent origin [asia].
   asia,

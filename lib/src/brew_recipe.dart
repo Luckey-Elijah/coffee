@@ -4,7 +4,6 @@ import 'brew_method.dart';
 
 /// {@template brew_recipe}
 /// The details and parts of brewing coffee.
-///
 /// {@endtemplate}
 class BrewRecipe extends Equatable {
   /// {@macro brew_recipe}

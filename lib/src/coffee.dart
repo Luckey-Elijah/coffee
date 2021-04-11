@@ -1,5 +1,4 @@
 import 'package:equatable/equatable.dart';
-
 import 'brew_recipe.dart';
 
 /// Brewing coffee is just the process of following a [BrewRecipe]

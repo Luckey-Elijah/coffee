@@ -1,4 +1,5 @@
-/// Brew type are used to
+/// Brew types are helpful for also figuring out
+/// the volume the coffee was brewed in.
 enum BrewType {
   /// Pressure actuated valve method for your AeroPress methods
   prismo,

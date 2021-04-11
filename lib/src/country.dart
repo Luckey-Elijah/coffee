@@ -754,9 +754,15 @@ enum Country {
   unknown,
 }
 
-/// Useful extensions on the enum [Country]
+/// Useful extensions on the enum [Country].
 extension CountryX on Country {
-  /// Convert this country enum to it's string.
+  /// Convert this country code to it's string representation.
+  ///
+  /// Example:
+  /// ```dart
+  /// var usCode = Country.US;
+  /// assert('United States' == usCode.codeToString());
+  /// ```
   String codeToString() {
     switch (this) {
       case Country.AF:
