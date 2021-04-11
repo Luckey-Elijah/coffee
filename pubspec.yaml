@@ -1,7 +1,8 @@
 name: coffee
 description: A coffee-related library for an object-oriented representation of coffee.
 version: 0.0.1
-# homepage: https://www.example.com
+homepage: https://github.com/Luckey-Elijah/coffee
+repository: https://github.com/Luckey-Elijah/coffee
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
