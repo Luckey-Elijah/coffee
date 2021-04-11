@@ -1,3 +1,9 @@
+## 0.0.3
+
+- Adds tests
+- Update doc comments
+- Adds testing badge to README.md
+
 ## 0.0.2
 
 - Updates README.md
