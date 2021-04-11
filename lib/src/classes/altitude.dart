@@ -1,4 +1,5 @@
 import 'package:equatable/equatable.dart';
+import '../enums/altitude_unit.dart';
 
 /// {@template altitude}
 /// Altitude is classified by the range the coffee plant was grown at.
@@ -35,8 +36,8 @@ class Altitude extends Equatable {
   final AltitudeUnit unit;
 
   /// Two-length list to get the [upper] and [lower] range of
-  /// the altitude in default units.
-  List<int> get range => [upper, lower];
+  /// the altitude in default units, respectively.
+  List<int> get range => [lower, upper];
 
   /// Two-length list to get the [upper] and [lower] range of
   /// the altitude in feet.
@@ -56,13 +57,4 @@ class Altitude extends Equatable {
 
   @override
   List<Object?> get props => [lower, upper, unit];
-}
-
-/// Unit for determining an altitude form of measurement.
-enum AltitudeUnit {
-  /// Unit for measuring altitude in feet.
-  feet,
-
-  /// Unit for measuring altitude in meters.
-  meters,
 }

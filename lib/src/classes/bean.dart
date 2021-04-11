@@ -1,10 +1,11 @@
 import 'package:equatable/equatable.dart';
-import 'altitude.dart';
+
 import '../enums/continent.dart';
 import '../enums/country.dart';
 import '../enums/plant_type.dart';
 import '../enums/process.dart';
 import '../enums/roast.dart';
+import 'altitude.dart';
 
 /// {@template bean}
 /// The bean carries all the attributes of the bean from it's roast

@@ -1,7 +1,7 @@
 // ignore_for_file: constant_identifier_names
 
-/// All country codes. To access the string of the enum,
-/// try using the [codeToString] extension method.
+/// All country codes. To use the string of the enum,
+/// consider using the `codeToString` extension method.
 enum Country {
   /// Afghanistan
   AF,

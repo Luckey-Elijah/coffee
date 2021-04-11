@@ -27,7 +27,7 @@ class BrewRecipe extends Equatable {
     required this.beanWeight,
     required this.waterWeight,
     this.method,
-  });
+  }) : assert(beanWeight > 0 && waterWeight > 0);
 
   /// The bean this recipe is using.
   final Bean bean;
