@@ -1,0 +1,17 @@
+name: coffee
+description: A coffee-related library for an object-oriented representation of coffee.
+version: 0.0.1
+# homepage: https://www.example.com
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  equatable: ^2.0.0
+
+dev_dependencies:
+  # project analysis
+  very_good_analysis: ^2.0.0
+
+  # testing
+  test: ^1.14.4
