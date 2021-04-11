@@ -1,14 +1,27 @@
 import 'package:equatable/equatable.dart';
 import 'altitude.dart';
-import 'bean_process.dart';
-import 'continent.dart';
-import 'country.dart';
-import 'plant_type.dart';
-import 'roast.dart';
+import '../enums/continent.dart';
+import '../enums/country.dart';
+import '../enums/plant_type.dart';
+import '../enums/process.dart';
+import '../enums/roast.dart';
 
 /// {@template bean}
 /// The bean carries all the attributes of the bean from it's roast
 /// to it's origin.
+///
+/// Example:
+/// ```dart
+/// var myFavoriteBean = const Bean(
+///   roaster: 'Patriot Coffee Roaster',
+///   name: 'Ethiopia Nano Challa',
+///   roast: Roast.lightMedium,
+///   countries: [Country.ET],
+///   altitude: Altitude(lower: 1900, upper: 2200),
+///   process: Process.washed,
+///   notes: ['Red Grape', 'Pineapple', 'Elderflower'],
+/// );
+/// ```
 /// {@endtemplate}
 class Bean extends Equatable {
   /// {@macro bean}

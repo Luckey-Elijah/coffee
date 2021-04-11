@@ -1,10 +1,6 @@
 import 'package:equatable/equatable.dart';
 import 'brew_recipe.dart';
 
-/// Brewing coffee is just the process of following a [BrewRecipe]
-/// and creating [Coffee].
-typedef BrewCoffee = Coffee Function(BrewRecipe);
-
 /// {@template coffee}
 /// Coffee is created by following a brew recipe.
 /// {@endtemplate}

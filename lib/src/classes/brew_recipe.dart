@@ -4,15 +4,29 @@ import 'brew_method.dart';
 
 /// {@template brew_recipe}
 /// The details and parts of brewing coffee.
+///
+/// Example:
+/// ```dart
+/// var recipe = BrewRecipe(
+///   bean: Bean(
+///     roast: Roast.light,
+///     roaster: 'My Favorite Local Roaster',
+///     name: 'Market Blend',
+///   ),
+///   beanWeight: 30.1,
+///   waterWeight: 504,
+/// );
+/// var ratio = recipe.ratio // about 16.7
+/// ```
 /// {@endtemplate}
 class BrewRecipe extends Equatable {
   /// {@macro brew_recipe}
   const BrewRecipe({
     required this.bean,
-    required this.grindSize,
+    this.grindSize,
     required this.beanWeight,
     required this.waterWeight,
-    required this.method,
+    this.method,
   });
 
   /// The bean this recipe is using.

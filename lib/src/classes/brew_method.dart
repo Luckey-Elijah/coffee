@@ -1,5 +1,5 @@
 import 'package:equatable/equatable.dart';
-import 'brew_type.dart';
+import '../enums/brew_type.dart';
 
 /// {@template brew_method}
 /// The brew method model. Includes a [title] and a list of [steps].

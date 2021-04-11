@@ -1,5 +1,5 @@
 /// Roast level of a coffee bean.
-/// Can be one of the following, 1 being th e:
+/// Can be one of the following:
 /// 1. `veryLight`
 /// 2. `light`
 /// 3. `lightMedium`
