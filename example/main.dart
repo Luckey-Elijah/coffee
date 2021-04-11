@@ -37,8 +37,8 @@ void main() {
 
   var ratio = myGoToRecipe.ratio.toStringAsFixed(1); // about 16.74
 
-  var notes = '''Was delicious as always!
-It seems the 1:$ratio ratio has been working for ${myGoToRecipe.bean.name}.''';
+  var notes =
+      'Was delicious as always! It seems the 1:$ratio ratio has been working for ${myGoToRecipe.bean.name}.';
 
   var todaysCoffee = Coffee(
     notes: notes,
