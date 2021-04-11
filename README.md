@@ -2,7 +2,7 @@
 
 A coffee-related library for an object-oriented representation of coffee.
 
-[![pub package](https://img.shields.io/pub/v/coffee.svg)](https://pub.dev/packages/coffee) [![pub points](https://badges.bar/coffee/pub%20points)](https://pub.dev/packages/coffee/score)
+[![pub package](https://img.shields.io/pub/v/coffee.svg)](https://pub.dev/packages/coffee) [![pub points](https://badges.bar/coffee/pub%20points)](https://pub.dev/packages/coffee/score) [![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis)
 
 ## Usage
 
