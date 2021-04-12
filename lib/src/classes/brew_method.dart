@@ -25,13 +25,13 @@ class BrewMethod extends Equatable {
     required this.steps,
   });
 
-  /// The name of this brew.
+  /// The name/title of this brew.
   final String title;
 
   /// The type of this brew method. For example: pour over, espresso, etc.
   final BrewType type;
 
-  /// The steps of this brew. Don't prepend the steps with numbers,
+  /// The steps of this brew. Don't pre-pend the steps with numbers,
   /// prefer to use the order of the list.
   final List<String> steps;
 

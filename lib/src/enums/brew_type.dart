@@ -22,6 +22,6 @@ enum BrewType {
   coldBrew,
 
   /// The pressurized coffee processed of pushing hot water
-  /// throught a "puck" of coffee.
+  /// throughout a "puck" of coffee.
   espresso
 }

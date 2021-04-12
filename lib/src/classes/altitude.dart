@@ -16,6 +16,7 @@ import '../enums/altitude_unit.dart';
 /// );
 /// ```
 /// {@endtemplate}
+
 class Altitude extends Equatable {
   /// {@macro altitude}
   const Altitude({
@@ -25,14 +26,14 @@ class Altitude extends Equatable {
   });
 
   /// The lower range of the coffee altitude.
-  /// Would be the first value in a given range.
+  /// Would be the first value in this [range].
   final int lower;
 
   /// The upper range of the coffee altitude.
-  /// Would be the second value in a given range.
+  /// Would be the second value in this [range].
   final int upper;
 
-  /// How this altitudes height/units are being stored.
+  /// How this altitude's height is being tracked.
   final AltitudeUnit unit;
 
   /// Two-length list to get the [upper] and [lower] range of
@@ -51,8 +52,10 @@ class Altitude extends Equatable {
       ? range // if already in "correct units", return range
       : [_feetToMeters(lower), _feetToMeters(upper)];
 
+  /// Utilities function for converting feet to meters.
   static int _feetToMeters(int feet) => (feet * 0.3048).round();
 
+  /// Utilities function for converting meters to feet.
   static int _metersToFeet(int meter) => (meter * 3.28084).round();
 
   @override

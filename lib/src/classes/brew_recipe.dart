@@ -33,7 +33,6 @@ class BrewRecipe extends Equatable {
   final Bean bean;
 
   /// The grind size this recipe is using.
-  /// Can be `null` if pre-ground beans are use.
   final int? grindSize;
 
   /// The bean's weight for this recipe.
@@ -42,10 +41,10 @@ class BrewRecipe extends Equatable {
   /// The water's weight for this recipe.
   final double waterWeight;
 
-  /// The brew method of this coffee, such as po
+  /// The brew method of this coffee.
   final BrewMethod? method;
 
-  /// A the bean-to-water reatio for the recipe.
+  /// A the bean-to-water ratio for this recipe.
   double get ratio => (waterWeight / beanWeight);
 
   @override
