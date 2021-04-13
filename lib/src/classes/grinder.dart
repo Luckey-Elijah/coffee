@@ -7,7 +7,7 @@ part 'grinder_range.dart';
 /// {@endtemplate}
 class Grinder extends Equatable {
   /// {@macro grinder}
-  Grinder({
+  const Grinder({
     required this.make,
     required this.model,
     this.stepped,
