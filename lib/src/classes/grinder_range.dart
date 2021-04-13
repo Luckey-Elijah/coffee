@@ -5,7 +5,7 @@ part of 'grinder.dart';
 /// {@endtemplate}
 class GrinderRange extends Equatable {
   /// {@macro grinder_range}
-  GrinderRange(this.lower, this.upper)
+  const GrinderRange(this.lower, this.upper)
       : assert(lower < upper),
         assert(lower > 0 && upper > 0);
 
