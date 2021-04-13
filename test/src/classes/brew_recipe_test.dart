@@ -3,31 +3,39 @@ import 'package:test/test.dart';
 
 void main() {
   group('BrewRecipe', () {
+    const _steps = [
+      'Rinse paper in V60 and pre heat it',
+      'Pour in grams coffee, make a well with your finger in the coffee bed',
+      '...',
+    ];
+
+    final _method = const BrewMethod(
+      title: 'James Hoffman V60',
+      type: BrewType.pourOver,
+      steps: _steps,
+    );
+
+    final _bean = const Bean(
+      roaster: 'Patriot',
+      name: 'Market Blend',
+      roast: Roast.medium,
+    );
+
+    final _grinder = const Grinder(
+      make: 'Fellow',
+      model: 'Ode',
+      range: GrinderRange(1, 11),
+      stepped: true,
+      type: GrinderType.burr,
+    );
     test('init and properties', () {
-      const _steps = [
-        'Rinse paper in V60 and pre heat it',
-        'Pour in grams coffee, make a well with your finger in the coffee bed',
-        '...',
-      ];
-
-      final _method = const BrewMethod(
-        title: 'James Hoffman V60',
-        type: BrewType.pourOver,
-        steps: _steps,
-      );
-
-      final _bean = const Bean(
-        roaster: 'Patriot',
-        name: 'Market Blend',
-        roast: Roast.medium,
-      );
-
       final recipe = BrewRecipe(
         bean: _bean,
         grindSize: 3,
         method: _method,
         beanWeight: 30.0,
         waterWeight: 500.0,
+        grinder: _grinder,
       );
 
       expect(recipe.props, [
@@ -53,9 +61,35 @@ void main() {
       ]);
     });
 
+    test('throws assertion errors', () {
+      expect(
+        () => BrewRecipe(
+          bean: _bean,
+          grindSize: 12,
+          method: _method,
+          beanWeight: 30.0,
+          waterWeight: 500.0,
+          grinder: _grinder, // range: 1 - 11
+        ),
+        throwsA(isA<AssertionError>()),
+      );
+
+      expect(
+        () => BrewRecipe(
+          bean: _bean,
+          grindSize: 0.5,
+          method: _method,
+          beanWeight: 30.0,
+          waterWeight: 500.0,
+          grinder: _grinder, // range: 1 - 11
+        ),
+        throwsA(isA<AssertionError>()),
+      );
+    });
+
     test('get ratio', () {
-      final recipe = const BrewRecipe(
-          bean: Bean(
+      final recipe = BrewRecipe(
+          bean: const Bean(
             roaster: 'roaster',
             name: 'name',
             roast: Roast.light,

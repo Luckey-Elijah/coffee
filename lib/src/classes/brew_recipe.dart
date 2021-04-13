@@ -1,6 +1,7 @@
 import 'package:equatable/equatable.dart';
 import 'bean.dart';
 import 'brew_method.dart';
+import 'grinder.dart';
 
 /// {@template brew_recipe}
 /// The details and parts of brewing coffee.
@@ -21,19 +22,24 @@ import 'brew_method.dart';
 /// {@endtemplate}
 class BrewRecipe extends Equatable {
   /// {@macro brew_recipe}
-  const BrewRecipe({
+  BrewRecipe({
     required this.bean,
     this.grindSize,
     required this.beanWeight,
     required this.waterWeight,
     this.method,
-  }) : assert(beanWeight > 0 && waterWeight > 0);
+    this.grinder,
+  })  : assert(grindSize! > grinder!.range!.lower),
+        assert(grindSize! < grinder!.range!.upper),
+        assert(beanWeight > 0 && waterWeight > 0);
 
   /// The bean this recipe is using.
   final Bean bean;
 
   /// The grind size this recipe is using.
-  final int? grindSize;
+  /// Make sure your grindsize is in theh range of grinder's GrinderRange
+  /// if the range is not null.
+  final num? grindSize;
 
   /// The bean's weight for this recipe.
   final double beanWeight;
@@ -43,6 +49,9 @@ class BrewRecipe extends Equatable {
 
   /// The brew method of this coffee.
   final BrewMethod? method;
+
+  /// Grinder used for this recipe.
+  final Grinder? grinder;
 
   /// A the bean-to-water ratio for this recipe.
   double get ratio => (waterWeight / beanWeight);
