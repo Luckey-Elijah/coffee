@@ -16,6 +16,9 @@ class GrinderRange extends Equatable {
   /// The upper range of the grinder.
   final num upper;
 
+  /// Check for a value between [lower] and [upper]
+  bool isInRange(num value) => value < upper && value > lower;
+
   @override
   List<Object?> get props => [lower, upper];
 }
