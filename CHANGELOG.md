@@ -1,3 +1,11 @@
+## 0.0.4
+
+- Adds classes:
+  - `Grinder`
+  - `GrinderRange`
+- Adds `enum GrinderType`
+- Adds/updates tests for classes.
+
 ## 0.0.3
 
 - Adds tests
