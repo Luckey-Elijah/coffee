@@ -57,7 +57,14 @@ void main() {
             'Pour in grams coffee, make a well with your finger in the coffee bed',
             '...',
           ],
-        )
+        ),
+        const Grinder(
+          make: 'Fellow',
+          model: 'Ode',
+          range: GrinderRange(1, 11),
+          stepped: true,
+          type: GrinderType.burr,
+        ),
       ]);
     });
 

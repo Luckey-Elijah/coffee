@@ -79,5 +79,6 @@ class BrewRecipe with EquatableMixin {
         beanWeight,
         waterWeight,
         method,
+        grinder,
       ];
 }
