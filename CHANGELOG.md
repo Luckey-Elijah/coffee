@@ -1,3 +1,8 @@
+## 0.0.5
+
+- Minor fixes
+- Adds 100% coverage reports in Github Actions
+
 ## 0.0.4
 
 - Adds classes:
