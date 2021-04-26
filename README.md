@@ -2,7 +2,7 @@
 
 A coffee-related library for an object-oriented representation of coffee.
 
-[![pub package](https://img.shields.io/pub/v/coffee.svg)](https://pub.dev/packages/coffee) [![pub points](https://badges.bar/coffee/pub%20points)](https://pub.dev/packages/coffee/score) [![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis) [![Dart Validation](https://github.com/Luckey-Elijah/coffee/actions/workflows/dart.yml/badge.svg)](https://github.com/Luckey-Elijah/coffee/actions/workflows/dart.yml)
+[![][pub_svg]][pub_url] [![pub points][pub_score_svg]][pub_score_url] [![style: very good analysis][very_good_analysis_svg]][very_good_analysis_url] [![Dart Validation][dart_validation_svg]][dart_validation_url]
 
 ## Usage
 
@@ -48,6 +48,14 @@ var todaysCoffee = Coffee(
 
 ## Features and bugs
 
-Please file feature requests and bugs at the [issue tracker][tracker].
+Please file feature requests and bugs at the [issue tracker][tracker_url].
 
-[tracker]: https://github.com/Luckey-Elijah/coffee/issues
+[tracker_url]: https://github.com/Luckey-Elijah/coffee/issues
+[pub_url]: https://pub.dev/packages/coffee
+[pub_svg]: https://img.shields.io/pub/v/coffee.svg
+[pub_score_url]: https://pub.dev/packages/coffee/score
+[pub_score_svg]: https://badges.bar/coffee/pub%20points
+[very_good_analysis_url]: https://pub.dev/packages/very_good_analysis
+[very_good_analysis_svg]: https://img.shields.io/badge/style-very_good_analysis-B22C89.svg
+[dart_validation_url]: https://github.com/Luckey-Elijah/coffee/actions/workflows/dart.yml
+[dart_validation_svg]: https://github.com/Luckey-Elijah/coffee/actions/workflows/dart.yml/badge.svg
