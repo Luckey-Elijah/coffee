@@ -34,3 +34,9 @@ jobs:
 
       - name: Check Code Coverage
         uses: VeryGoodOpenSource/very_good_coverage@v1.1.1
+
+      - name: Send to Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.COVERALLS_IO_TOKEN }}
+          path-to-lcov: ./coverage/coverage.lcov

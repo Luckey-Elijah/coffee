@@ -2,7 +2,7 @@
 
 A coffee-related library for an object-oriented representation of coffee.
 
-[![pub package](https://img.shields.io/pub/v/coffee.svg)](https://pub.dev/packages/coffee) [![pub points](https://badges.bar/coffee/pub%20points)](https://pub.dev/packages/coffee/score) [![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis) [![Dart Validation](https://github.com/Luckey-Elijah/coffee/actions/workflows/dart.yml/badge.svg)](https://github.com/Luckey-Elijah/coffee/actions/workflows/dart.yml)
+[![pub package](https://img.shields.io/pub/v/coffee.svg)](https://pub.dev/packages/coffee) [![pub points](https://badges.bar/coffee/pub%20points)](https://pub.dev/packages/coffee/score) [![style: very good analysis](https://img.shields.io/badge/style-very_good_analysis-B22C89.svg)](https://pub.dev/packages/very_good_analysis) [![Dart Validation](https://github.com/Luckey-Elijah/coffee/actions/workflows/dart.yml/badge.svg)](https://github.com/Luckey-Elijah/coffee/actions/workflows/dart.yml) [![Coverage Status](https://coveralls.io/repos/github/Luckey-Elijah/coffee/badge.svg)](https://coveralls.io/github/Luckey-Elijah/coffee)
 
 ## Usage
 
