@@ -1,6 +1,6 @@
+import 'package:coffee/src/enums/grinder_type.dart';
 import 'package:equatable/equatable.dart';
-part '../enums/grinder_type.dart';
-part 'grinder_range.dart';
+import 'grinder_range.dart';
 
 /// {@template grinder}
 /// The tool used for grinding coffee beans.

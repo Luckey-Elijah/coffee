@@ -1,4 +1,4 @@
-part of 'grinder.dart';
+import 'package:equatable/equatable.dart';
 
 /// {@template grinder_range}
 /// The range of grind size for your grinder.

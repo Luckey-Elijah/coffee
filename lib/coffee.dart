@@ -7,11 +7,13 @@ export 'src/classes/brew_method.dart';
 export 'src/classes/brew_recipe.dart';
 export 'src/classes/coffee.dart';
 export 'src/classes/grinder.dart';
+export 'src/classes/grinder_range.dart';
 
 export 'src/enums/altitude_unit.dart';
 export 'src/enums/brew_type.dart';
 export 'src/enums/continent.dart';
 export 'src/enums/country.dart';
+export 'src/enums/grinder_type.dart';
 export 'src/enums/plant_type.dart';
 export 'src/enums/process.dart';
 export 'src/enums/roast.dart';
