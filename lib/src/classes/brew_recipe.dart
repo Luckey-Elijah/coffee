@@ -31,8 +31,9 @@ class BrewRecipe with EquatableMixin {
     Grinder? grinder,
   }) : assert(beanWeight > 0 && waterWeight > 0) {
     // When give BOTH grindsize and grinder:
-    if (grindSize != null && grinder?.range != null)
+    if (grindSize != null && grinder?.range != null) {
       assert(grinder!.range!.isInRange(grindSize));
+    }
     _grinder = grinder;
     _grindSize = grindSize;
   }
